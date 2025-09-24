@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neptun Code - Portafolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- 🔹 Header -->
+  <header class="flex items-center justify-between px-6 py-4 bg-gray-800 shadow-lg">
+    <div class="flex items-center space-x-2">
+      <!-- Logo animado -->
+      <div class="relative w-10 h-10">
+        <svg viewBox="0 0 100 100" class="animate-pulse">
+          <circle cx="50" cy="50" r="45" stroke="#66FCF1" stroke-width="4" fill="none" />
+          <circle cx="50" cy="50" r="30" fill="#45A29E">
+            <animate attributeName="r" values="28;32;28" dur="3s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+      <span class="text-2xl font-bold text-cyan-400">Neptun Code</span>
+    </div>
+    <nav class="space-x-6">
+      <a href="#inicio" class="hover:text-cyan-400">Inicio</a>
+      <a href="#proyectos" class="hover:text-cyan-400">Proyectos</a>
+      <a href="#contacto" class="hover:text-cyan-400">Contacto</a>
+      <a href="#github" class="hover:text-cyan-400">GitHub</a>
+    </nav>
+  </header>
+
+  <!-- 🔹 Hero -->
+  <section id="inicio" class="h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <h1 class="text-5xl font-extrabold mb-4">Soy <span class="text-cyan-400">JUan Trujillo</span></h1>
+    <p class="text-lg text-gray-300 max-w-xl mb-6">Desarrollador web enfocado en crear experiencias digitales modernas, eficientes y con impacto visual.</p>
+    <div class="space-x-4">
+      <a href="#proyectos" class="bg-cyan-500 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-cyan-400 transition">Ver Proyectos</a>
+      <a href="#contacto" class="border border-cyan-500 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-cyan-400 hover:text-gray-900 transition">Contáctame</a>
+    </div>
+  </section>
+
+  <!-- 🔹 Sección Proyectos -->
+  <section id="proyectos" class="py-20 bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/circuit-board.svg')] bg-cover bg-center bg-fixed text-white relative">
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+    <div class="relative max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Mis Proyectos</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Proyecto 1 -->
+        <div class="bg-gray-800 rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="https://via.placeholder.com/600x400" alt="Proyecto 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Proyecto 1</h3>
+            <p class="text-gray-400 mb-4">Plantilla web moderna para empresa de servicios.</p>
+            <div class="flex space-x-3">
+              <a href="https://tuusuario.github.io/proyecto1/" target="_blank" 
+                 class="inline-block bg-cyan-500 text-white px-4 py-2 rounded-lg hover:bg-cyan-400 transition">Ver Demo</a>
+              <a href="https://github.com/juandavid124567890-collab/proyecto1" target="_blank" 
+                 class="inline-block border border-cyan-500 text-cyan-500 px-4 py-2 rounded-lg hover:bg-cyan-500 hover:text-white transition">Ver Código</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="bg-gray-800 rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="https://via.placeholder.com/600x400" alt="Proyecto 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Proyecto 2</h3>
+            <p class="text-gray-400 mb-4">E-commerce con diseño responsivo y carrito de compras.</p>
+            <div class="flex space-x-3">
+              <a href="https://tuusuario.github.io/proyecto2/" target="_blank" 
+                 class="inline-block bg-cyan-500 text-white px-4 py-2 rounded-lg hover:bg-cyan-400 transition">Ver Demo</a>
+              <a href="https://github.com/juandavid124567890-collab/proyecto2" target="_blank" 
+                 class="inline-block border border-cyan-500 text-cyan-500 px-4 py-2 rounded-lg hover:bg-cyan-500 hover:text-white transition">Ver Código</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Más proyectos -->
+        <div class="bg-gray-800 rounded-2xl shadow-lg flex items-center justify-center p-6">
+          <p class="text-gray-400 text-center">Más proyectos en camino... 🚀</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Contacto -->
+  <section id="contacto" class="py-20 bg-gray-800 text-center">
+    <h2 class="text-3xl font-bold mb-6">Contacto</h2>
+    <p class="text-gray-400 mb-6">Puedes escribirme directamente en:</p>
+    <div class="flex justify-center space-x-6">
+      <a href="https://wa.me/573122971645" target="_blank" class="bg-green-500 px-6 py-3 rounded-lg font-semibold hover:bg-green-400 transition">WhatsApp</a>
+      <a href="mailto:juandavid124567890@gmail.com" target="_blank" class="bg-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-blue-400 transition">Correo</a>
+      <a href="https://github.com/juandavid124567890-collab" target="_blank" class="bg-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-600 transition">GitHub</a>
+    </div>
+  </section>
+
+  <!-- 🔹 GitHub Stats -->
+  <section id="github" class="py-20 bg-gray-900 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-cyan-400">Estadísticas de GitHub</h2>
+    <p class="text-gray-400 mb-6">Un vistazo a mi actividad como desarrollador.</p>
+    <div class="flex flex-col items-center space-y-6">
+      <img src="https://github-readme-stats.vercel.app/api?username=juandavid124567890-collab&show_icons=true&theme=tokyonight&hide_border=true" 
+           alt="GitHub Stats" class="rounded-lg shadow-lg">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=juandavid124567890-collab&layout=compact&theme=tokyonight&hide_border=true" 
+           alt="Lenguajes más usados" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- 🔹 Contador de visitas -->
+  <section id="visitas" class="py-10 bg-gray-800 text-center">
+    <h2 class="text-2xl font-bold mb-4 text-cyan-400">Visitas a mi portafolio</h2>
+    <p class="text-gray-400 mb-4">Gracias por visitar mi página 🙌</p>
+    <a href="https://hits.sh/juandavid124567890-collab/" target="_blank">
+      <img src="https://hits.sh/juandavid124567890-collab.svg?style=for-the-badge&label=Visitas&color=cyan&labelColor=gray" alt="Contador de Visitas" class="mx-auto">
+    </a>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer class="py-6 bg-gray-900 text-center text-gray-500">
+    <p>© 2025 Neptun Code. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
